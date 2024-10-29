@@ -22,7 +22,6 @@ class UserController extends Controller
      */
     public function index()
     {
-        // die("acacacac");
         $this->authorize('adminViewAny', User::class);
         $users = (new User)->newQuery()->with(['roles']);
 
