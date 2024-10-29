@@ -23,7 +23,7 @@
 - To get started, you need to install [Docker Desktop](https://www.docker.com/products/docker-desktop).
 - You may run the following command in your terminal
 - Windows open WSL2 Linux terminal. [Docker Desktop WSL 2 backend](https://docs.docker.com/desktop/windows/wsl/)
-- `docker run --rm -v "$(pwd)":/opt -w /opt laravelsail/php83-composer:latest bash -c "composer create-project balajidharma/basic-laravel-admin-panel admin-app && cd admin-app && php artisan sail:install --with=mysql,redis,meilisearch,mailpit,selenium"`
+- `docker run --rm -v "$(pwd)":/opt -w /opt laravelsail/php83-composer:latest bash -c "git clone git@github.com:emilianosuarez/admin-panel.git && cd admin-panel && php artisan sail:install --with=mysql,redis,meilisearch,mailpit,selenium"`
 - `cd admin-app`
 - `./vendor/bin/sail pull mysql redis meilisearch mailpit selenium`
 - `./vendor/bin/sail build`
@@ -37,8 +37,8 @@
 
 ### Without Docker Desktop
 - To get started, you need to install [PHP Composer](https://getcomposer.org/).
-- `composer create-project balajidharma/basic-laravel-admin-panel admin-app`
-- `cd admin-app`
+- `git clone git@github.com:emilianosuarez/admin-panel.git `
+- `cd admin-panel`
 - Create a new MYSQL database and update database details in `.env` file
 - `php artisan vendor:publish --tag=admin-core`
 - `php artisan migrate --seed --seeder=AdminCoreSeeder`
