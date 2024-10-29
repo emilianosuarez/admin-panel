@@ -38,6 +38,7 @@
 ### Without Docker Desktop
 - To get started, you need to install [PHP Composer](https://getcomposer.org/).
 - `git clone git@github.com:emilianosuarez/admin-panel.git `
+- `composer install`
 - `cd admin-panel`
 - Create a new MYSQL database and update database details in `.env` file
 - `php artisan vendor:publish --tag=admin-core`
