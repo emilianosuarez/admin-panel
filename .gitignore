@@ -15,3 +15,13 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+
+config/admin.php
+config/category.php
+config/crud.php
+config/form-builder.php
+config/media-manager.php
+config/menu.php
+database/migrations/2024_10_29_182729_create_category_tables.php
+database/migrations/2024_10_29_182729_create_menu_tables.php
+database/seeders/AdminCoreSeeder.php
